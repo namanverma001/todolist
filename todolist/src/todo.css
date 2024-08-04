@@ -1,0 +1,100 @@
+/* todo.css */
+
+.todo-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.todo-container input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.todo-container button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.todo-container button:hover {
+    background-color: #218838;
+}
+
+.todo-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-container li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.todo-container li button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.todo-container li button:nth-child(2) {
+    background-color: #dc3545;
+    color: white;
+}
+
+.todo-container li button:nth-child(2):hover {
+    background-color: #c82333;
+}
+
+.todo-container li button:nth-child(3) {
+    background-color: #007bff;
+    color: white;
+}
+
+.todo-container li button:nth-child(3):hover {
+    background-color: #0069d9;
+}
+
+.todo-container .edit-mode {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-container .edit-mode input[type="text"] {
+    width: calc(100% - 90px);
+    margin-bottom: 0;
+}
+
+.todo-container .edit-mode button {
+    width: 80px;
+    margin-left: 10px;
+    background-color: #ffc107;
+}
+
+.todo-container .edit-mode button:hover {
+    background-color: #e0a800;
+}
